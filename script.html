@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GAWD Streetwear</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header>
+  <nav>
+    <div class="logo">GAWD</div>
+    <button id="hamburger" aria-label="Toggle menu" aria-expanded="false">&#9776;</button>
+    <ul id="nav-menu" class="nav-menu">
+      <li><a href="#products" class="nav-link">Products</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section id="hero">
+  <h1>Walk With Power & Style</h1>
+  <p>Unique streetwear for the chosen ones.</p>
+  <div id="countdown-timer" aria-live="polite"></div>
+</section>
+
+<section id="products" aria-label="Product listings" class="products">
+  <div class="filter-buttons" role="group" aria-label="Filter products by category">
+    <button class="filter-btn active" data-filter="all" aria-pressed="true">All</button>
+    <button class="filter-btn" data-filter="tees" aria-pressed="false">Tees</button>
+    <button class="filter-btn" data-filter="hoodies" aria-pressed="false">Hoodies</button>
+  </div>
+
+  <div class="product-grid" id="product-grid">
+
+    <div class="product-card" data-category="tees" tabindex="0" aria-label="Anointed Tee, 4500 Naira">
+      <div class="product-image" style="background-image: url('https://i.imgur.com/hI9j6dy.jpg');" role="img" aria-label="Anointed Tee"></div>
+      <div class="product-name">Anointed Tee</div>
+      <div class="product-price">₦4,500</div>
+      <div class="product-tagline">Wear your purpose.</div>
+      <button class="buy-btn" data-amount="450000" data-product="Anointed Tee">Buy Now</button>
+    </div>
+
+    <div class="product-card" data-category="hoodies" tabindex="0" aria-label="Walk With Power Hoodie, 8000 Naira">
+      <div class="product-image" style="background-image: url('https://i.imgur.com/UPfvz7X.jpg');" role="img" aria-label="Walk With Power Hoodie"></div>
+      <div class="product-name">Walk With Power Hoodie</div>
+      <div class="product-price">₦8,000</div>
+      <div class="product-tagline">Strength in style.</div>
+      <button class="buy-btn" data-amount="800000" data-product="Walk With Power Hoodie">Buy Now</button>
+    </div>
+
+    <div class="product-card" data-category="tees" tabindex="0" aria-label="Chosen Ones Tee, 5000 Naira">
+      <div class="product-image" style="background-image: url('https://i.imgur.com/aHqpINb.jpg');" role="img" aria-label="Chosen Ones Tee"></div>
+      <div class="product-name">Chosen Ones Tee</div>
+      <div class="product-price">₦5,000</div>
+      <div class="product-tagline">Be among the elite.</div>
+      <button class="buy-btn" data-amount="500000" data-product="Chosen Ones Tee">Buy Now</button>
+    </div>
+
+  </div>
+</section>
+
+<section id="about" aria-label="About the brand" class="about">
+  <h2>About GAWD</h2>
+  <p>GAWD is more than a streetwear brand — it’s a movement for those chosen to walk in power and style. Born from a passion for unique expression and spiritual depth, our designs speak to the bold and the visionary.</p>
+  <p class="founder">Founded by Samuel, driven by purpose.</p>
+</section>
+
+<footer>
+  &copy; 2025 GAWD. All rights reserved.
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
